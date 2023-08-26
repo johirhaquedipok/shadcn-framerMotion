@@ -45,7 +45,7 @@ const Layout = () => {
               <li>
                 <a
                   className="flex items-center gap-x-3.5 py-2 px-2.5 bg-gray-100 text-sm text-slate-700 rounded-md hover:bg-gray-100 dark:bg-gray-900 dark:text-white"
-                  href="javascript:;"
+                  href="###"
                 >
                   <svg
                     className="w-3.5 h-3.5"
@@ -70,7 +70,7 @@ const Layout = () => {
               <li className="hs-accordion" id="users-accordion">
                 <a
                   className="hs-accordion-toggle flex items-center gap-x-3.5 py-2 px-2.5 hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent text-sm text-slate-700 rounded-md hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-900 dark:text-slate-400 dark:hover:text-slate-300 dark:hs-accordion-active:text-white"
-                  href="javascript:;"
+                  href="###"
                 >
                   <svg
                     className="w-3.5 h-3.5"
@@ -125,7 +125,7 @@ const Layout = () => {
                     <li className="hs-accordion" id="users-accordion-sub-1">
                       <a
                         className="hs-accordion-toggle flex items-center gap-x-3.5 py-2 px-2.5 hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent text-sm text-slate-700 rounded-md hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-900 dark:text-slate-400 dark:hover:text-slate-300 dark:hs-accordion-active:text-white"
-                        href="javascript:;"
+                        href="###"
                       >
                         Sub Menu 1
                         <svg
@@ -167,7 +167,7 @@ const Layout = () => {
                           <li>
                             <a
                               className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-slate-700 rounded-md hover:bg-gray-100 dark:bg-gray-800 dark:text-slate-400 dark:hover:text-slate-300"
-                              href="javascript:;"
+                              href="###"
                             >
                               Link 1
                             </a>
@@ -175,7 +175,7 @@ const Layout = () => {
                           <li>
                             <a
                               className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-slate-700 rounded-md hover:bg-gray-100 dark:bg-gray-800 dark:text-slate-400 dark:hover:text-slate-300"
-                              href="javascript:;"
+                              href="###"
                             >
                               Link 2
                             </a>
@@ -183,7 +183,7 @@ const Layout = () => {
                           <li>
                             <a
                               className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-slate-700 rounded-md hover:bg-gray-100 dark:bg-gray-800 dark:text-slate-400 dark:hover:text-slate-300"
-                              href="javascript:;"
+                              href="###"
                             >
                               Link 3
                             </a>
@@ -194,7 +194,7 @@ const Layout = () => {
                     <li className="hs-accordion" id="users-accordion-sub-2">
                       <a
                         className="hs-accordion-toggle flex items-center gap-x-3.5 py-2 px-2.5 hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent text-sm text-slate-700 rounded-md hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-900 dark:text-slate-400 dark:hover:text-slate-300 dark:hs-accordion-active:text-white"
-                        href="javascript:;"
+                        href="###"
                       >
                         Sub Menu 2
                         <svg
@@ -236,7 +236,7 @@ const Layout = () => {
                           <li>
                             <a
                               className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-slate-700 rounded-md hover:bg-gray-100 dark:bg-gray-800 dark:text-slate-400 dark:hover:text-slate-300"
-                              href="javascript:;"
+                              href="###"
                             >
                               Link 1
                             </a>
@@ -244,7 +244,7 @@ const Layout = () => {
                           <li>
                             <a
                               className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-slate-700 rounded-md hover:bg-gray-100 dark:bg-gray-800 dark:text-slate-400 dark:hover:text-slate-300"
-                              href="javascript:;"
+                              href="###"
                             >
                               Link 2
                             </a>
@@ -252,7 +252,7 @@ const Layout = () => {
                           <li>
                             <a
                               className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-slate-700 rounded-md hover:bg-gray-100 dark:bg-gray-800 dark:text-slate-400 dark:hover:text-slate-300"
-                              href="javascript:;"
+                              href="###"
                             >
                               Link 3
                             </a>
@@ -266,7 +266,7 @@ const Layout = () => {
               <li className="hs-accordion" id="account-accordion">
                 <a
                   className="hs-accordion-toggle flex items-center gap-x-3.5 py-2 px-2.5 hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent text-sm text-slate-700 rounded-md hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-900 dark:text-slate-400 dark:hover:text-slate-300 dark:hs-accordion-active:text-white"
-                  href="javascript:;"
+                  href="###"
                 >
                   <svg
                     className="w-3.5 h-3.5"
@@ -322,7 +322,7 @@ const Layout = () => {
                     <li>
                       <a
                         className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-slate-700 rounded-md hover:bg-gray-100 dark:bg-gray-800 dark:text-slate-400 dark:hover:text-slate-300"
-                        href="javascript:;"
+                        href="###"
                       >
                         Link 1
                       </a>
@@ -330,7 +330,7 @@ const Layout = () => {
                     <li>
                       <a
                         className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-slate-700 rounded-md hover:bg-gray-100 dark:bg-gray-800 dark:text-slate-400 dark:hover:text-slate-300"
-                        href="javascript:;"
+                        href="###"
                       >
                         Link 2
                       </a>
@@ -338,7 +338,7 @@ const Layout = () => {
                     <li>
                       <a
                         className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-slate-700 rounded-md hover:bg-gray-100 dark:bg-gray-800 dark:text-slate-400 dark:hover:text-slate-300"
-                        href="javascript:;"
+                        href="###"
                       >
                         Link 3
                       </a>
@@ -349,7 +349,7 @@ const Layout = () => {
               <li className="hs-accordion" id="projects-accordion">
                 <a
                   className="hs-accordion-toggle flex items-center gap-x-3.5 py-2 px-2.5 hs-accordion-active:text-blue-600 hs-accordion-active:hover:bg-transparent text-sm text-slate-700 rounded-md hover:bg-gray-100 dark:bg-gray-800 dark:hover:bg-gray-900 dark:text-slate-400 dark:hover:text-slate-300 dark:hs-accordion-active:text-white"
-                  href="javascript:;"
+                  href="###"
                 >
                   <svg
                     className="w-3.5 h-3.5"
@@ -402,7 +402,7 @@ const Layout = () => {
                     <li>
                       <a
                         className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-slate-700 rounded-md hover:bg-gray-100 dark:bg-gray-800 dark:text-slate-400 dark:hover:text-slate-300"
-                        href="javascript:;"
+                        href="###"
                       >
                         Link 1
                       </a>
@@ -410,7 +410,7 @@ const Layout = () => {
                     <li>
                       <a
                         className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-slate-700 rounded-md hover:bg-gray-100 dark:bg-gray-800 dark:text-slate-400 dark:hover:text-slate-300"
-                        href="javascript:;"
+                        href="###"
                       >
                         Link 2
                       </a>
@@ -418,7 +418,7 @@ const Layout = () => {
                     <li>
                       <a
                         className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-slate-700 rounded-md hover:bg-gray-100 dark:bg-gray-800 dark:text-slate-400 dark:hover:text-slate-300"
-                        href="javascript:;"
+                        href="###"
                       >
                         Link 3
                       </a>
@@ -429,7 +429,7 @@ const Layout = () => {
               <li>
                 <a
                   className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-slate-700 rounded-md hover:bg-gray-100 dark:hover:bg-gray-900 dark:text-slate-400 dark:hover:text-slate-300"
-                  href="javascript:;"
+                  href="###"
                 >
                   <svg
                     className="w-3.5 h-3.5"
@@ -448,7 +448,7 @@ const Layout = () => {
               <li>
                 <a
                   className="flex items-center gap-x-3.5 py-2 px-2.5 text-sm text-slate-700 rounded-md hover:bg-gray-100 dark:hover:bg-gray-900 dark:text-slate-400 dark:hover:text-slate-300"
-                  href="javascript:;"
+                  href="###"
                 >
                   <svg
                     className="w-3.5 h-3.5"
@@ -474,7 +474,7 @@ const Layout = () => {
         animate={{ x: 0, opacity: 1 }}
         transition={{
           opacity: { ease: "linear" },
-          layout: { duration: 0.3 },
+          layout: { duration: 0.2 },
         }}
         className="flex flex-col flex-auto min-h-screen min-w-0 relative w-full ease-linear"
       >
