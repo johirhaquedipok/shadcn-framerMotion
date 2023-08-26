@@ -145,8 +145,8 @@ export function Login() {
                 )}
               />
 
-              <CardFooter className=" p-0">
-                <Button className="w-full">Create account</Button>
+              <CardFooter className="p-0">
+                <Button className="w-full">Login</Button>
               </CardFooter>
             </form>
           </Form>
