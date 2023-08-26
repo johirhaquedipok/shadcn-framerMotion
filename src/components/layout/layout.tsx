@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { HiOutlineUserCircle } from "react-icons/hi2";
 
+import { ModeToggle } from "@/components/dark-mode-toggle.tsx/dark-mode-toggle";
 import { UserNav } from "@/components/user-nav/user-nav";
 import { TextAlignLeftIcon } from "@radix-ui/react-icons";
 import { useState } from "react";
@@ -492,6 +493,7 @@ const Layout = () => {
               <HiOutlineUserCircle />
             </div>
             <UserNav />
+            <ModeToggle />
           </div>
         </header>
         <div className="h-full flex flex-auto flex-col">
