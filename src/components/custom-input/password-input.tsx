@@ -7,7 +7,8 @@ type Props = {
   children: JSX.Element;
 };
 
-const CustomTextInput = ({ children }: Props) => {
+const PasswordInput = ({ children }: Props) => {
+  // view password state
   const [showPassword, setShowPassword] = useState(false);
   // password toggle handle
   const togglePassword = () => {
@@ -33,4 +34,4 @@ const CustomTextInput = ({ children }: Props) => {
   );
 };
 
-export default CustomTextInput;
+export default PasswordInput;

@@ -20,20 +20,24 @@ import {
 import { Input } from "@/components/ui/input";
 import { toast } from "@/components/ui/use-toast";
 
-import CustomTextInput from "@/components/custom-input/custom-text-input";
 import { Button } from "@/components/ui/button";
-import { EnvelopeClosedIcon } from "@radix-ui/react-icons";
+import {
+  EnvelopeClosedIcon,
+  EyeClosedIcon,
+  EyeOpenIcon,
+} from "@radix-ui/react-icons";
 import { useState } from "react";
+import { HiOutlineLockClosed } from "react-icons/hi2";
 
-const profileFormSchema = z.object({
+const LoginFormSchema = z.object({
   email: z
     .string()
     .email("Please enter a valid email address.")
     .min(2, {
-      message: "Username must be at least 2 characters.",
+      message: "email must be at least 2 characters.",
     })
     .max(30, {
-      message: "Username must not be longer than 30 characters.",
+      message: "email must not be longer than 30 characters.",
     }),
   // .or(z.string()),
 
@@ -43,16 +47,16 @@ const profileFormSchema = z.object({
     .max(64, "Consider using a short password"),
 });
 
-type ProfileFormValues = z.infer<typeof profileFormSchema>;
+type ProfileFormValues = z.infer<typeof LoginFormSchema>;
 
 const defaultValues: Partial<ProfileFormValues> = {
   email: "",
   password: "",
 };
 
-export function ProfileForm() {
+export function Login() {
   const form = useForm<ProfileFormValues>({
-    resolver: zodResolver(profileFormSchema),
+    resolver: zodResolver(LoginFormSchema),
     defaultValues,
     mode: "onChange",
   });
@@ -112,14 +116,29 @@ export function ProfileForm() {
                   <FormItem>
                     <FormLabel>Password</FormLabel>
 
-                    <CustomTextInput>
-                      <Input
-                        placeholder="password"
-                        type={showPassword ? "text" : "password"}
-                        className="px-11"
-                        {...field}
-                      />
-                    </CustomTextInput>
+                    <div className=" flex items-center relative">
+                      <HiOutlineLockClosed className="absolute ml-2 h-6 w-6 text-gray-400 transition-colors duration-300 hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400" />
+                      <FormControl>
+                        <Input
+                          placeholder="password"
+                          type={showPassword ? "text" : "password"}
+                          className="pl-11 "
+                          {...field}
+                        />
+                      </FormControl>
+
+                      <button
+                        type="button"
+                        onClick={togglePassword}
+                        className="absolute right-0 focus:outline-none rtl:left-0 rtl:right-auto"
+                      >
+                        {showPassword ? (
+                          <EyeOpenIcon className="mx-3 h-5 w-5 text-gray-400 transition-colors duration-300 hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400" />
+                        ) : (
+                          <EyeClosedIcon className="mx-3 h-5 w-5 text-gray-400 transition-colors duration-300 hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400" />
+                        )}
+                      </button>
+                    </div>
 
                     <FormMessage />
                   </FormItem>

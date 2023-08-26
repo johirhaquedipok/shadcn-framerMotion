@@ -1,8 +1,9 @@
 import MainTest from "@/components/layout/main-test";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { HiOutlineEnvelope, HiOutlineUserCircle } from "react-icons/hi2";
+import { HiOutlineUserCircle } from "react-icons/hi2";
 
+import { TextAlignLeftIcon } from "@radix-ui/react-icons";
 import { useState } from "react";
 
 const Layout = () => {
@@ -483,7 +484,7 @@ const Layout = () => {
           <div className="relative flex w-full items-center justify-between p-0 px-4 h-16">
             <div className="text-2xl">
               <Button variant="ghost" onClick={handleSidebar}>
-                <HiOutlineEnvelope />
+                <TextAlignLeftIcon className="w-6 h-6" />
               </Button>
             </div>
             <div>

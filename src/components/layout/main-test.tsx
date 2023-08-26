@@ -1,10 +1,11 @@
-import { ProfileForm } from "@/profile-forms";
+import { Login } from "@/login";
+import { Register } from "@/register";
 
 const MainTest = () => {
   return (
     <div>
-      {/* <DemoCreateAccount /> */}
-      <ProfileForm />
+      <Login />
+      <Register />
     </div>
   );
 };
