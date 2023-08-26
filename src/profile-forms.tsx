@@ -12,7 +12,6 @@ import {
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -21,7 +20,10 @@ import {
 import { Input } from "@/components/ui/input";
 import { toast } from "@/components/ui/use-toast";
 
+import CustomTextInput from "@/components/custom-input/custom-text-input";
 import { Button } from "@/components/ui/button";
+import { EnvelopeClosedIcon } from "@radix-ui/react-icons";
+import { useState } from "react";
 
 const profileFormSchema = z.object({
   email: z
@@ -54,6 +56,11 @@ export function ProfileForm() {
     defaultValues,
     mode: "onChange",
   });
+  const [showPassword, setShowPassword] = useState(false);
+  // password toggle handle
+  const togglePassword = () => {
+    setShowPassword(!showPassword);
+  };
 
   function onSubmit(data: ProfileFormValues) {
     console.log(data);
@@ -83,13 +90,17 @@ export function ProfileForm() {
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Name</FormLabel>
-                    <FormControl>
-                      <Input placeholder="email" {...field} />
-                    </FormControl>
-                    <FormDescription>
-                      This is the name that will be displayed on your profile
-                      and in emails.
-                    </FormDescription>
+                    <div className=" flex items-center relative">
+                      <EnvelopeClosedIcon className="absolute ml-2 h-6 w-6 text-gray-400 transition-colors duration-300 hover:text-gray-500 dark:text-gray-500 dark:hover:text-gray-400" />
+                      <FormControl>
+                        <Input
+                          placeholder="email"
+                          type="email"
+                          className="pl-11 "
+                          {...field}
+                        />
+                      </FormControl>
+                    </div>
                     <FormMessage />
                   </FormItem>
                 )}
@@ -100,24 +111,22 @@ export function ProfileForm() {
                 render={({ field }) => (
                   <FormItem>
                     <FormLabel>Password</FormLabel>
-                    <FormControl>
+
+                    <CustomTextInput>
                       <Input
                         placeholder="password"
-                        type="password"
+                        type={showPassword ? "text" : "password"}
+                        className="px-11"
                         {...field}
                       />
-                    </FormControl>
-                    <FormDescription>
-                      This is your public display name. It can be your real name
-                      or a pseudonym. You can only change this once every 30
-                      days.
-                    </FormDescription>
+                    </CustomTextInput>
+
                     <FormMessage />
                   </FormItem>
                 )}
               />
 
-              <CardFooter>
+              <CardFooter className=" p-0">
                 <Button className="w-full">Create account</Button>
               </CardFooter>
             </form>
