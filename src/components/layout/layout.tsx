@@ -1,7 +1,6 @@
 import MainTest from "@/components/layout/main-test";
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import { HiOutlineUserCircle } from "react-icons/hi2";
 
 import { ModeToggle } from "@/components/dark-mode-toggle.tsx/dark-mode-toggle";
 import { UserNav } from "@/components/user-nav/user-nav";
@@ -29,7 +28,7 @@ const Layout = () => {
           }}
           id="application-sidebar"
           // className="hs-overlay hs-overlay-open:translate-x-0 -translate-x-full transition-all duration-300 transform hidden fixed top-0 left-0 bottom-0 z-[60] w-64 bg-white border-r border-gray-200 pt-7 pb-10 overflow-y-auto scrollbar-y lg:block lg:translate-x-0 lg:right-auto lg:bottom-0 dark:scrollbar-y dark:bg-gray-800 dark:border-gray-700"
-          className="z-20 flex-auto shrink-0  min-w-[290px] border-r bg-slate-100 sticky top-0 h-screen"
+          className="z-20 flex-auto shrink-0  min-w-[290px] border-r bg-background sticky top-0 h-screen"
           // className="w-[290px] min-w-[290px]"
         >
           <div className="px-6 h-16 border-b">
@@ -482,18 +481,17 @@ const Layout = () => {
         }}
         className="flex flex-col flex-auto min-h-screen min-w-0 relative w-full ease-linear"
       >
-        <header className="sticky top-0 z-30 flex w-full bg-slate-100">
+        <header className="sticky top-0 z-30 flex w-full bg-background">
           <div className="relative flex w-full items-center justify-between p-0 px-4 h-16">
             <div className="text-2xl">
               <Button variant="ghost" onClick={handleSidebar}>
                 <TextAlignLeftIcon className="w-6 h-6" />
               </Button>
             </div>
-            <div>
-              <HiOutlineUserCircle />
+            <div className="flex items-center gap-2">
+              <UserNav />
+              <ModeToggle />
             </div>
-            <UserNav />
-            <ModeToggle />
           </div>
         </header>
         <div className="h-full flex flex-auto flex-col">
