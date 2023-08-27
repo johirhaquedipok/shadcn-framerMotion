@@ -1,4 +1,5 @@
 import { Login } from "@/login";
+import { CreateProject } from "@/pages/create-project/create-project";
 import { StepOne } from "@/pages/setting/email/step-one";
 import { StepTwo } from "@/pages/setting/email/step-two";
 import { ManageApiKey } from "@/pages/setting/mange-api-key";
@@ -14,6 +15,7 @@ const MainTest = () => {
       <StepTwo />
       <ManagePassword />
       <ManageApiKey />
+      <CreateProject />
     </div>
   );
 };
